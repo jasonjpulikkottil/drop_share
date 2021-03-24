@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#3c8aef"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="83">
+
+        <com.jdots.share.view.RadarScanView
+            android:id="@+id/radar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:circleColor="#fff"
+            app:circleNum="4"
+            app:flicker="3"
+            app:raindropNum="4"
+            app:showCross="true"
+            app:speed="5"
+            app:sweepColor="#fff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#4c82ef"
+            android:orientation="vertical"
+            android:weightSum="30">
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/icon_size_list_giant"
+                android:layout_height="@dimen/icon_size_list_giant"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/layout_profile_picture_image_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/layout_profile_picture_image_preferred"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?roundSelector" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="end|bottom"
+                    android:background="?rippleBackground"
+                    android:padding="3dp"
+                    app:srcCompat="@drawable/ic_edit_white_24dp"
+                    app:tint="@android:color/white" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/header_default_device_name_text"
+                style="@style/TextAppearance.Primary.Big.SingleLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/text_unknown"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/header_default_device_version_text"
+                style="@style/TextAppearance.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDivider" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/TextAppearance.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:text="Make sure your friend is in receive mode."
+        android:textColor="@color/colorDivider" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="@drawable/qrbutton"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/angry_btn"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/qrbutton"
+            android:text="SCAN QRCODE"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:icon="@mipmap/ic_launcher"
+            app:iconTint="@drawable/qrbutton" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="#2FFFEB3B">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/send"
+
+
+                style="?attr/materialButtonOutlinedStyle"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:shadowColor="#2196F3"
+                android:text="SEND"
+                android:textSize="22sp"
+                app:icon="@drawable/ic_send"
+                app:iconGravity="start"
+                app:iconSize="40dp"
+                app:rippleColor="?attr/colorPrimaryDark">
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/receive"
+                style="?attr/materialButtonOutlinedStyle"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RECEIVE"
+                android:textSize="22sp"
+                app:icon="@drawable/ic_receive"
+                app:iconGravity="start"
+                app:iconSize="40dp"
+                app:rippleColor="?attr/colorPrimaryDark">
+
+            </Button>
+
+            <Button
+                android:id="@+id/webshare"
+
+
+                style="?attr/materialButtonOutlinedStyle"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:text="WEB SHARE"
+                android:textSize="22sp"
+                app:icon="@drawable/ic_web_white2_24dp"
+                app:iconSize="40dp"
+                app:rippleColor="?attr/colorPrimaryDark">
+
+            </Button>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</LinearLayout>

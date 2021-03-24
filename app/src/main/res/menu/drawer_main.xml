@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Select Option">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share App" />
+
+            <item
+                android:id="@+id/about_me"
+                android:title="About" />
+
+
+
+            <item
+                android:id="@+id/rate_us"
+                android:title="Rate" />
+
+            <item
+                android:id="@+id/moreapp"
+                android:title="More Apps" />
+
+        </menu>
+    </item>
+
+</menu>
